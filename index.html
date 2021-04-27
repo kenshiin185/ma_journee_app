@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo-List</title>
+</head>
+
+<body>
+    <div class="head">
+
+        <h1>Ma journée</h1>
+    </div>
+    <div class="modale hidden">
+        <div class="question">Etes-vous sûr de vouloir supprimer votre liste ?</div>
+        <div class="reponse">
+            <div class="yes" onclick="reset()">Oui</div>
+            <div class="no" onclick="closeModal()">Non</div>
+        </div>
+    </div>
+    <div class="wrapAdd">
+        <div class="add" onclick="addTask()">+</div>
+        <input type="text">
+        <div class="clear" onclick="openModal()"><img src="images/gome.png" alt=""></div>
+    </div>
+    <div class="aFaire">
+        <div class="msg"></div>
+        <div class="todolist"></div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

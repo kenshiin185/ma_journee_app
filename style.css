@@ -1,0 +1,112 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+.wrapAdd {
+    display: flex;
+    width: 290px;
+    justify-content: space-between;
+    margin: auto;
+}
+.add {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 52, 184);
+    color: aliceblue;
+    font-size: 3em;
+    padding-bottom: 2%;
+    
+}
+.add:hover {
+    cursor: pointer;
+}
+.yes:hover, .no:hover {
+    cursor: pointer;
+}
+.clear {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(96, 119, 224);
+}
+.todolist {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.msg {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img {
+    width: 40px;
+    height: 40px;
+}
+img:hover {
+    cursor: pointer;
+}
+.head {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(50, 52, 184);
+    margin-bottom: 50px;
+}
+
+.modale {
+    width: 300px;
+    margin: auto;
+    border: 4px dashed aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    animation: pop ease-in-out .6s;
+    background-color: rgb(66, 75, 153);
+    z-index: 9;
+    color: aliceblue;
+}
+.reponse {
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.hidden {
+    display: none;
+}
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
